@@ -3,7 +3,7 @@ site_name: testMkDocsAdN
 site_description: testMkDocsAdN/ Tutoriel pour créer et gérer un site web depuis un dépôt git avec le framework material pour mkdocs et des notebook jupyter
 site_author: "Eric MADEC" 
 copyright: Document partagé par <a href="https://github.com/ericECmorlaix" target="_blank">Eric MADEC</a> &copy; 2021 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a> <br> Illustrations par <a href="https://undraw.co/" target="_blank">UnDraw</a>
-site_url: https://ericecmorlaix.github.io/testMkDocsAdN/
+site_url: https://ericecmorlaix.github.io/
 
 # Dépot du projet 
 repo_name: 'testMkDocsAdN/' 
@@ -19,10 +19,11 @@ docs_dir: docs
 # Menu de navigation
 nav: 
     - Accueil : index.md
+    - test.md
     
    
 
-# Définition du thème https://squidfunk.github.io/mkdocs-material/creating-your-site/
+# Définition du thème https://squidfunk.github.io/mkdocs-material/creating-your-site/#configuration
 theme:
     name: material
     custom_dir: overrides
@@ -49,8 +50,6 @@ theme:
         - navigation.instant 
         - navigation.tabs # Menu de navigation horizontal sous l'en-tête sauf sur appareil mobile
         # - navigation.tabs.sticky # Menu de navigation horizontal collant
-        # - navigation.sections
-        # - navigation.expand
         - navigation.top # bouton pour remonter tout en haut de la page
         - toc.integrate # Table Of Content, table des matières intégrée dans la barre verticale de navigation
         - header.autohide # masquage automatique de l'entête du site lorsque l'on descend dans la page        
@@ -59,35 +58,36 @@ theme:
 
 markdown_extensions: # https://squidfunk.github.io/mkdocs-material/reference/abbreviations/
     # extensions de la bibliothèque markdown standard
-    - abbr                          # infobulles sur abbréviations 
+    - abbr                          # Infobulles sur abbréviations 
     - meta                          # Métadonnées
-    - def_list                      # Les listes de définition.
-    - attr_list                     # Un peu de CSS et des attributs HTML.
+    - def_list                      # Listes de définition.
+    - attr_list                     # Sélecteurs CSS et attributs HTML personnalisés
     - md_in_html                    # Pour écrire en MarkDown dans des balises HTML https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#markdown-in-html
     - footnotes                     # Notes[^1] de bas de page.  [^1]: ma note.
-    - admonition                    # Blocs colorés  !!! info "ma remarque"
-    - toc: # Table des matières
+    - admonition                    # Boite d'avertissements  !!! info "ma remarque"
+    - toc:                          # Table des matières
         permalink: ⚓︎
         toc_depth: 4
     # extensions de python-markdown https://facelessuser.github.io/pymdown-extensions/
-    - pymdownx.details              #   qui peuvent se plier/déplier.
-    - pymdownx.caret                # Passage ^^souligné^^ ou en ^exposant^.
-    - pymdownx.mark                 # Passage ==surligné==.
-    - pymdownx.tilde                # Passage ~~barré~~ ou en ~indice~.
+    - pymdownx.details              # plier/déplier les avertissements.
+    - pymdownx.caret                # texte ^^souligné^^ ou en ^exposant^.
+    - pymdownx.mark                 # texte ==surligné==.
+    - pymdownx.tilde                # texte ~~barré~~ ou en ~indice~.
+    - pymdownx.critic               # Pour du marquage et commentaires de révision de texte
     - pymdownx.highlight            # Coloration syntaxique du code
     - pymdownx.inlinehilite         # pour  `#!python  <python en ligne>`
     - pymdownx.snippets             # Inclusion de fichiers externe.
     - pymdownx.tasklist:            # Cases à cocher  - [ ]  et - [x]
-        custom_checkbox:    true   #   avec cases d'origine
+        custom_checkbox:    true    #   avec cases d'origine
         clickable_checkbox: true    #   et cliquables.
-    - pymdownx.tabbed               # Volets glissants.  === "Mon volet"
+    - pymdownx.tabbed               # Onglets coulissants.  === "Onglet"
     - pymdownx.superfences          # Imbrication de blocs.
     - pymdownx.keys:                # Touches du clavier.  ++ctrl+d++
         separator: "\uff0b"
     - pymdownx.emoji:               # Émojis  :boom:
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
-    - pymdownx.arithmatex:  # Formules en LaTeX 
+    - pymdownx.arithmatex:          # Formules en LaTeX 
         generic: true
     
   
@@ -106,7 +106,7 @@ extra:
       link: mailto:eric.madec@ecmorlaix.fr
       name: Pour toute question, suggestion ou commentaire, écrire à l'auteur
     - icon: fontawesome/brands/github
-      link: https://github.com/ericECmorlaix/testMkDocsAdN/
+      link: https://github.com/ericECmorlaix/adn-Tutoriel_site_web
       name: dépôt github
     - icon: fontawesome/solid/university
       link: https://www.ecmorlaix.fr/nos-etablissements/lycee-notre-dame-du-mur/
