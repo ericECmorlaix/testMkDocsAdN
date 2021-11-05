@@ -1,14 +1,18 @@
-# Informations du site 
+# Paramètres obligatoires
 site_name: testMkDocsAdN
-site_description: testMkDocsAdN/ Tutoriel pour créer et gérer un site web depuis un dépôt git avec le framework material pour mkdocs et des notebook jupyter
-site_author: "Eric MADEC" 
-copyright: Document partagé par <a href="https://github.com/ericECmorlaix" target="_blank">Eric MADEC</a> &copy; 2021 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a> <br> Illustrations par <a href="https://undraw.co/" target="_blank">UnDraw</a>
-site_url: https://ericecmorlaix.github.io/
+site_url: https://ericecmorlaix.github.io/testMkDocsAdN/
 
-# Dépot du projet 
-repo_name: 'testMkDocsAdN/' 
-repo_url: https://github.com/ericECmorlaix/testMkDocsAdN/ # Ajoute l'icone et le lien vers le dépot GitHub en haut à droite
-edit_url: tree/main/
+
+# site_description: testMkDocsAdN/ Tutoriel pour créer et gérer un site web depuis un dépôt git avec le framework material pour mkdocs et des notebook jupyter
+# site_author: "Eric MADEC" 
+# copyright: Document partagé par <a href="https://github.com/ericECmorlaix" target="_blank">Eric MADEC</a> &copy; 2021 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a> <br> Illustrations par <a href="https://undraw.co/" target="_blank">UnDraw</a>
+
+
+# # Dépot du projet 
+ 
+repo_url: https://github.com/ericECmorlaix/testMkDocsAdN # Ajoute l'icone et le lien vers le dépot GitHub en haut à droite
+repo_name: 'testMkDocsAdN'
+edit_url: blob/main/docs
 
 
 # Structure des dossiers :
@@ -100,17 +104,17 @@ plugins:
       include_source: True
 
 
-extra:
-  social: 
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:eric.madec@ecmorlaix.fr
-      name: Pour toute question, suggestion ou commentaire, écrire à l'auteur
-    - icon: fontawesome/brands/github
-      link: https://github.com/ericECmorlaix/adn-Tutoriel_site_web
-      name: dépôt github
-    - icon: fontawesome/solid/university
-      link: https://www.ecmorlaix.fr/nos-etablissements/lycee-notre-dame-du-mur/
-      name: Lycée Notre Dame du Mur
+# extra:
+#   social: 
+#     - icon: fontawesome/solid/paper-plane
+#       link: mailto:eric.madec@ecmorlaix.fr
+#       name: Pour toute question, suggestion ou commentaire, écrire à l'auteur
+#     - icon: fontawesome/brands/github
+#       link: https://github.com/ericECmorlaix/adn-Tutoriel_site_web
+#       name: dépôt github
+#     - icon: fontawesome/solid/university
+#       link: https://www.ecmorlaix.fr/nos-etablissements/lycee-notre-dame-du-mur/
+#       name: Lycée Notre Dame du Mur
 
 
 extra_javascript:
