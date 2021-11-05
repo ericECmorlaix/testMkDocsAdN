@@ -12,7 +12,7 @@ site_url: https://ericecmorlaix.github.io/testMkDocsAdN/
  
 repo_url: https://github.com/ericECmorlaix/testMkDocsAdN/ # Ajoute l'icone et le lien vers le dépot GitHub en haut à droite
 repo_name: 'testMkDocsAdN'
-edit_url: "tree/main/docs/"
+edit_uri: tree/main/docs/
 
 
 # Structure des dossiers :
