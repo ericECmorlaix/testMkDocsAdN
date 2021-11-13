@@ -6,6 +6,19 @@ hide:
 Ceci est un tutoriel pour déployer un site web depuis un dépôt git
  avec le framework material pour mkdocs en incluant, ou pas, des notebook jupyter...
 
+ {{ hello() }}
+***
+{{ config.site_name }}
+***
+{{ environment.system }}
+***
+{{ navigation.pages }}
+***
+{{ plugin.module }}
+***
+{{ context(page) | pretty }}
+***
+
  [Chap_01](./Chap_01)
 
  [Chap_01](/Chap_01)

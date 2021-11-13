@@ -24,6 +24,7 @@ docs_dir: docs
 nav: 
     - Accueil : index.md
     - Tata: test.md
+    - info.md
     
    
 
@@ -102,19 +103,20 @@ plugins:
       kernel_name: python3
       execute: False
       include_source: True
+  - macros # ajout du mini-framwork mkdocs-macros-plugin, https://mkdocs-macros-plugin.readthedocs.io/
 
 
-# extra:
-#   social: 
-#     - icon: fontawesome/solid/paper-plane
-#       link: mailto:eric.madec@ecmorlaix.fr
-#       name: Pour toute question, suggestion ou commentaire, écrire à l'auteur
-#     - icon: fontawesome/brands/github
-#       link: https://github.com/ericECmorlaix/adn-Tutoriel_site_web
-#       name: dépôt github
-#     - icon: fontawesome/solid/university
-#       link: https://www.ecmorlaix.fr/nos-etablissements/lycee-notre-dame-du-mur/
-#       name: Lycée Notre Dame du Mur
+extra:
+  social: 
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:eric.madec@ecmorlaix.fr
+      name: Pour toute question, suggestion ou commentaire, écrire à l'auteur
+    - icon: fontawesome/brands/github
+      link: https://github.com/ericECmorlaix/adn-Tutoriel_site_web
+      name: dépôt github
+    - icon: fontawesome/solid/university
+      link: https://www.ecmorlaix.fr/nos-etablissements/lycee-notre-dame-du-mur/
+      name: Lycée Notre Dame du Mur
 
 
 extra_javascript:
