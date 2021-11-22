@@ -1,8 +1,9 @@
 #import ...
 
 def define_env(env):
-  "Hook function"
+  "Toto's hook"
 
   @env.macro
   def hello() :
-      return "_Demat d'an holl_"
+      return "**Demat d'an holl**<br>_Toto est dans la place !_"
+

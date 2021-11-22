@@ -25,6 +25,7 @@ nav:
     - Accueil : index.md
     - Tata: test.md
     - info.md
+    - kroki.md
     
    
 
@@ -103,7 +104,8 @@ plugins:
       kernel_name: python3
       execute: False
       include_source: True
-  - macros # ajout du mini-framwork mkdocs-macros-plugin, https://mkdocs-macros-plugin.readthedocs.io/
+  - macros # ajout du mini-framework mkdocs-macros-plugin, https://mkdocs-macros-plugin.readthedocs.io/
+  - kroki # intégration de diagramme avec https://kroki.io ; https://github.com/AVATEAM-IT-SYSTEMHAUS/mkdocs-kroki-plugin
 
 
 extra:

@@ -7,6 +7,9 @@ Ceci est un tutoriel pour déployer un site web depuis un dépôt git
  avec le framework material pour mkdocs en incluant, ou pas, des notebook jupyter...
 
  {{ hello() }}
+
+<https://fr.wikipedia.org/wiki/Hook_(informatique)>  
+<https://fr.wikipedia.org/wiki/Fonction_de_rappel>
 ***
 {{ config.site_name }}
 ***
