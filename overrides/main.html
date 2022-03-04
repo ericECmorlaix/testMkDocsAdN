@@ -2,6 +2,11 @@
 
 {% extends "base.html" %}
 
+{% block announce %}
+  <!-- Add announcement here, including arbitrary HTML -->
+  <p><strong>Nouveauté : un bandeau d'annonce !</strong></p>
+{% endblock %}
+
 
 {% block content %}
 {% if page.nb_url %}
